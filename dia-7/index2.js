@@ -7,7 +7,7 @@ let opcao;
 
 do {
     alert(`Seu saldo atual é de R$${saldo.toFixed(2)}`);
-    dinheiro = parseFloat(prompt("Digite uma valor: "));
+    dinheiro = parseFloat(prompt("Digite um valor: "));
     opcao = parseInt(prompt("O que deseja fazer com esse valor ?\nDigite 1 para sacar.\nDigite 2 para depositá-lo."));
     realizarOperacao(opcao);
     querContinuar();
