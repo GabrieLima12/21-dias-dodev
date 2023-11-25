@@ -15,7 +15,7 @@ while (querCadastrarOutraNota) {
     if (querCadastrarOutraNota) {
         nota.push(parseFloat(prompt("Digite a nota do aluno: ")));
         sexo.push(prompt("Qual o sexo do aluno? \nDigite M - para masculino.\nDigite F - para feminino.\nDigite O - para outros.").toUpperCase());
-        querCadastrarOutraNota = confirm(`Deseja adicionar outra nota ?\nPressione "Confirmar" para sim e "Cancelar" para não.`);
+        querCadastrarOutraNota = confirm(`Deseja adicionar outra nota ?\nPressione "OK" para sim e "Cancelar" para não.`);
     }
 }
 
@@ -46,7 +46,7 @@ mediaGeral = somaDasNotas / nota.length;
 
 // Fazendo os prints no console.
 
-console.log(`A media geral dos alunos foi: ${mediaGeral}.`);
+console.log(`A media geral dos alunos foi: ${mediaGeral.toFixed(2)}.`);
 
 if (qtdHomens < 1) {
     console.log(`Nenhum homem teve sua nota cadastrada.`);
